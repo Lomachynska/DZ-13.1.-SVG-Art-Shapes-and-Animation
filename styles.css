@@ -1,0 +1,51 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+
+}
+
+span {
+    color: brown;
+    display: flex;
+    justify-content: center;
+}
+
+.Shapes {
+margin: 85px;
+display: flex;
+justify-content:space-between;
+animation-duration: 2s;
+animation-name: slidein;
+}
+
+
+
+@keyframes slidein {
+    0% { margin-top: 0; }
+    50% { margin-top: 75px; }
+    75% {margin-top: 55px;}
+    100% { margin-top: 25px; }
+  }
+
+.circlenew {
+    display: flex;
+    justify-content: center;
+    animation-duration: 3s;
+    animation-name: circle;
+    background-color: aquamarine;
+    animation: slide 3s ease-in-out 1s infinite alternate;
+    animation-name: circlenew;
+}
+
+@keyframes circlenew {
+    0%   { background-color: red; left: 0; top: 0; }
+    25%  { background-color: yellow; left: 200px; top: 0; }
+    50%  { background-color: blue; left: 200px; top: 200px; }
+    75%  { background-color: green; left: 0; top: 200px; }
+    100% { background-color: red; left: 0; top: 0; }
+  }
